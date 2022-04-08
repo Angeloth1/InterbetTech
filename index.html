@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="tamplate\style.css" rel="stylesheet" type="text/css">
+    <title>Go green</title>
+    <link rel="shortcut icon" type="image/ico" href="static/favicon.ico">
+</head>
+
+
+<body>
+    <main>
+        <div class ="head">
+            <img src="static\Go+Green+Save+Green_v2_profile+photo_4.19-01.jpg" alt="">
+            <h1>Go green</h1>
+            <label  id="dark-change"></label>
+            <!--Here I will have the bottons for the textSize-->  
+            <div class="buttons">
+                <span class ="btn active" onclick ="document.getElementById('txt').style.fontSize = '0.8em'">A</span>
+                <span class ="btn"onclick ="document.getElementById('txt').style.fontSize = '1.25em'">A</span>
+                <span class ="btn"onclick ="document.getElementById('txt').style.fontSize = '1.75em'">A</span>
+            </div>
+            
+                <div class="info">
+                    <h2>
+                        phone: 26610-555555<br>
+                        email: test@example.com<br>
+                        address: Theotoki-theotokiou<br>
+                    </h2>
+                </div>
+                
+            </div>
+    
+            <div class="banner" id="banner">
+                <div class ="imgban" id="imgban3" ></div>     
+                <div class ="imgban" id="imgban2" ></div>   
+                <div class ="imgban" id="imgban1" ></div>
+                  
+            </div>
+
+        
+
+            <!--this is all the the links for the other pages -->
+            <div class="anchers" id="txt">
+                See our <a href="history.html">history</a><br>
+                See our <a href="actions.html">actions</a> 
+                <!--This div is here because I want the contact us a to be in a box-->
+                <div class="contactPage">
+                    <br>
+                        <a href="join.html">Contact us</a>
+                </div>
+            </div> 
+            </main>
+        
+    </main>
+</body>
+<script src="tamplate\bLoop.js"></script>
+<script src="tamplate\dark-light.js"></script>
+<script src="tamplate\textSize.js"></script>
+</html>
