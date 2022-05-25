@@ -1,121 +1,116 @@
 *{
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-	font-family: 'Quicksand', sans-serif;
+	margin:0;
+	padding:0;
+	box-sizing:  border-box;
+	font-family:'Poppins', sans-serif;
 }
 
 body{
+	display:flex;
 	height: 100vh;
-	width: 100%;
-}
-
-.container{
-	position: relative;
-	width: 100%;
-	height: 100%;
-	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 20px 100px;
+	padding: 10px;
+	background:linear-gradient(135deg, #8ad9c3,#76c316);
 }
 
-.container:after{
-	content: '';
+.container {
+	max-width: 700px;
+	width: 100%;
+	background: #fff;
+	padding: 25px 30px;
+	border-radius: 5px;
+}
+
+.container .title{
+	font-size:25px;
+	font-weight: 500;
+}
+
+.container .title::before{
+	content:'';
 	position: absolute;
-	width: 100%;
-	height: 100%;
 	left: 0;
-	top: 0;
-	background: url("banner3.jpg") no-repeat center;
-	background-size: cover;
-	filter: blur(50px);
-	z-index: -1;
-}
-.contact-box{
-	max-width: 850px;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	background-color: #fff;
-	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+	bottom: 0;
+	height: 3px;
+	width: 30px;
+	background:linear-gradient(135deg, #8ad9c3,#76c316);
 }
 
-.left{
-	background: url("Go+Green+Save+Green_v2_profile+photo_4.19-01.jpg") no-repeat center;
-	background-size: cover;
+.container form .user-details{
+	display:flex;
+	flex-wrap: wrap;
+	margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box{
+	margin-bottom: 15px;
+	width: calc(100% /2 - 20px);
+}
+
+user-details .input-box .details{
+	display:block;
+	font-weight:500;
+	margin: bottom 5px;
+}
+
+user-details .input-box input{
+	height:45px;
+	width: 100%;
+	outline: none;
+	border-radius: 5px;
+	border-radius: 1px solid #ccc;
+	padding-left: 15px;
+	font: size 16px;
+	border-bottom-width:2px;
+	transition: all 0.3s ease;
+}
+
+user-details .input-box input:focus,
+user-details .input-box input:valid{
+	border-color:#76c316 ;
+}
+.user-details .input-box .exp{
+	font-size:x-small;
+} 
+form .button {
+	height: 60px;
+	width: 100%;
+	margin: 70px 0;
+}
+
+form .button input {
 	height: 100%;
-}
-
-.right{
-	padding: 25px 40px;
-}
-
-h2{
-	position: relative;
-	padding: 0 0 10px;
-	margin-bottom: 10px;
-}
-
-h2:after{
-	content: '';
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    height: 4px;
-    width: 50px;
-    border-radius: 2px;
-    background-color: #2ecc71;
-}
-
-.field{
 	width: 100%;
-	border: 2px solid rgba(0, 0, 0, 0);
-	outline: none;
-	background-color: rgba(230, 230, 230, 0.6);
-	padding: 0.5rem 1rem;
-	font-size: 1.1rem;
-	margin-bottom: 22px;
-	transition: .3s;
+	outline:none;
+	color:#fff;
+	border:none;
+	font-size: 18px;
+	font-weight: 500;
+	background: linear-gradient(135deg, #8ad9c3,#76c316);
+	letter-spacing: 1px;
+	border-radius: 5px;
+
 }
 
-.field:hover{
-	background-color: rgba(0, 0, 0, 0.1);
+form .button input:hover {
+	background: linear-gradient(-135deg, #8ad9c3,#76c316);
+
 }
 
-textarea{
-	min-height: 150px;
-}
-
-.btn{
-	width: 100%;
-	padding: 0.5rem 1rem;
-	background-color: #2ecc71;
-	color: #fff;
-	font-size: 1.1rem;
-	border: none;
-	outline: none;
-	cursor: pointer;
-	transition: .3s;
-}
-
-.btn:hover{
-    background-color: #27ae60;
-}
-
-.field:focus{
-    border: 2px solid rgba(30,85,250,0.47);
-    background-color: #fff;
-}
-
-@media screen and (max-width: 880px){
-	.contact-box{
-		grid-template-columns: 1fr;
+@media (max-width: 584px) {
+	.container{
+		max-width: 100%;
 	}
-	.left{
-		height: 200px;
+	form .user-details .input-box{
+		margin-bottom: 15px;
+		width: 100%;
+	}
+	container form .user-details{
+		max-height: 300px;
+		overflow-y:scroll;
+	}
+	.user-details::-webkit-scrollbar{
+		width: 0;
 	}
 }
