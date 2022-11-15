@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Go green</title>
+	<link rel="stylesheet" type="text/css" href="tamplate\styleJoin.css">
+    <link rel="shortcut icon" type="image/ico" href="static/favicon.ico">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+</head>
+<body>
+	<div class="container">
+				<div class="title">Become Green</div>
+				<form actions="#">
+					<div class="user-details">
+						<div class="input-box">
+							<span class="details">Full Name<br></span>
+							<span class="exp">Only letters and a space between your first and last name<br></span>
+							<input id="firstName" type="text" placeholder="Enter your full name" required onkeyup="lettersNsp(this)">
+						</div>
+						
+						<div class="input-box">
+							<span class="details">Father's name*<br></span>
+							<span class="exp">please type only letters<br></span>
+							<input type="text" placeholder="Enter your father's name" onkeyup="lettersOnly(this)">
+						</div> 
+					
+						<div class="input-box">
+							<span class="details">Birthday<br></span>
+							<span class="exp">you have to be at least 18 years old<br></span>
+							<input type="number" placeholder="Enter your age" required onchange="age(this)">
+						</div>
+						
+						<div class="input-box">
+							<span class="details">Phone number*<br></span>
+							<span class="exp">you can only put 10digits<br></span>
+							<input type="number" placeholder="Enter your phone number" onkeyup="phone(this)">
+						</div>
+						
+						<div class="input-box">
+							<span class="details">E-mail<br></span>
+							<span class="exp">you have up to 64chars<br></span>
+							<input type="email" placeholder="Enter your e-mail" required onkeyup="Email(this)" >
+						</div>
+
+						<div class="input-box">
+							<span class="details">AFM<br></span>
+							<span class="exp">type your 9digit afm<br></span>
+							<input type="number" placeholder="Enter your AFM" required onkeyup="afm(this)">
+						</div>
+
+						<div class="input-box">
+							<span class="details">AMKA*<br></span>
+							<span class="exp">type you 11digit amka<br></span>
+							<input type="number" placeholder="Enter your AMKA" onkeyup="amka(this)">
+						</div>
+
+						<div class="input-box">
+							<span class="details">Credit card Number<br></span>
+							<span class="exp">type your 16digit card number <br></span>
+							<input type="number" placeholder="Enter your c.c.n" required onkeyup="ccn(this)">
+						</div>
+
+						<div class="input-box">
+							<span class="details">Experation date<br></span>
+							<span class="exp">The exparation date can not be determined<br></span>
+							<input type="date" id="demo" min="2022-05-15"placeholder="Enter your card's expiry date" required onkeypress="exp()">
+						</div>
+
+						<div class="input-box">
+							<span class="details">Address*<br></span>
+							<span class="exp">write your address<br></span>
+							<input type="text" placeholder="Enter your address" onkeyup="adr(this)">
+						</div>
+						<div class="input-box">
+							<textarea placeholder="Comments*" class="field"></textarea>
+						</div>
+						<span class="note">when ever you see the * it means that it is not mandatory to give an input<br></span>
+							<div class="button"> <input type="submit" value="Send">
+					</div>
+				</form>
+				
+			</div>
+		</div>
+	</div>
+</body>
+<script src="tamplate\restrictions.js"></script>
+</html>
